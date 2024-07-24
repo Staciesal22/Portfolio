@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5885d8cff.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./contents/5649204-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        </video>
+
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="./contents/Tech you got this!.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Junior Developer</p>
+                    <h1>Hi, I'm <span class="pan">Stacie</span><br>Saldanha</h1>
+                </div>
+            </div>
+        </div>
+        <!-- -----------about---------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./contents/White Dictionary Wabi Sabi Lifestyle Instagram Post.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p id="typed-text">Transitioning from a retail assistant to a junior developer has been incredibly fulfilling for me. I have always had a passion for learning different programming languages and building high-quality web solutions. <br> This career change has allowed me to delve deeper into new technologies and methodologies, which I find both exciting and challenging. My goal is to continue advancing my career alongside the rapid evolution of technology. <br> I am eager to explore and adopt new programming languages, tools, and frameworks that can enhance my skills and contribute to innovative projects. <br> Overall, I am enthusiastic about the opportunities ahead in my journey as a developer, and I look forward to contributing meaningfully to the field as it continues to grow and evolve.</p>
+        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                            <li><span class="skill-name">HTML</span> - Basic understanding of creating web page structure.</li>
+                            <li><span class="skill-name">JavaScript</span> - Learning to add interactivity to web applications.</li>
+                            <li><span class="skill-name">CSS</span> - Familiar with styling web pages for a better appearance.</li>
+                            <li><span class="skill-name">MySQL</span> - Basic knowledge of database querying.</li>
+                            <li><span class="skill-name">Python</span> - Starting to learn basic syntax and simple scripts.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>
+                                    <span>2022 - 2024</span><br>
+                                    <strong>Retail Assistant</strong>
+                                    <p>Provided exceptional customer service, managed inventory, and enhanced the shopping experience through product knowledge and engagement.</p>
+                                </li>
+                                <li>
+                                    <span>2019 - 2022</span><br>
+                                    <strong>Customer Service Representative</strong>
+                                    <p>Handled customer inquiries, resolved complaints, and maintained high satisfaction levels through effective communication and problem-solving skills.</p>
+                                </li>
+                                <li>
+                                    <span>2016 - 2018</span><br>
+                                    <strong>Administrative Assistant</strong>
+                                    <p>Supported office operations, managed schedules, and coordinated communication, contributing to a productive work environment.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>2024</span><br>
+                                    <strong>JustIt Bootcamp in Software Development</strong>
+                                    <p>Completed an intensive bootcamp focusing on modern programming languages and web development technologies, equipping me with practical skills for real-world applications.</p>
+                                </li>
+                                <li>
+                                    <span>2016</span><br>
+                                    <strong>Our Lady of the Rosary Higher Secondary School</strong>
+                                    <p>Graduated with a strong foundation in academic subjects, fostering critical thinking and problem-solving abilities.</p>
+                                </li>
+                                <li>
+                                    <span>2014</span><br>
+                                    <strong>Our Lady of the Rosary School</strong>
+                                    <p>Completed foundational education, developing a passion for learning and exploration.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------portfolio------------ -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./contents/58772.jpg">
+                        <div class="layer">
+                            <h3>Tic-Tac-Toe</h3>
+                            <p>Play a game!</p>
+                            <a href="/Tic-Tac-Toe/index.html?embed=true"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./contents/5951556.jpg">
+                        <div class="layer">
+                            <h3>Recipe Finder</h3>
+                            <p>Find a recipe you need!</p>
+                            <a href="/Recipe/index.html?embed=true"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./contents/calculator-neon-label-vector-26152637.webp">
+                        <div class="layer">
+                            <h3>Calculator</h3>
+                            <p>Need a quick math solution? Use me!</p>
+                            <a href="/Calculator/index.html?embed=true"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./contents/image_123650291 (1).JPG">
+                        <div class="layer">
+                            <h3>Music Player</h3>
+                            <p>Groove to this song!</p>
+                            <a href="/Music player/index.html?embed=true"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./contents/neon-are-you-ready-message-sign.jpg">
+                        <div class="layer">
+                            <h3>Quiz</h3>
+                            <p>What fruit are you?</p>
+                            <a href="/Fruit Quiz/?embed=true"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./contents/40905379.jpg">
+                        <div class="layer">
+                            <h3>To-Do-List</h3>
+                            <p>A simple to-do list</p>
+                            <a href="/To-Do-List/index.html?embed=true"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="iframe-title">Other Projects</h2>
+                <div class="iframe-container">
+                    <div class="iframe-item">
+                        <h3>Weather-Forecast Project</h3>
+                    <iframe class="styled-iframe" src="https://replit.com/@saldanhaviella1/MediumpurpleSurefootedWebpages?embed=true" frameborder="0"></iframe>
+                    </div>
+                    <div class="iframe-item">
+                        <h3>Rock-Paper-Scissor</h3>
+                    <iframe class="styled-iframe" src="https://replit.com/@saldanhaviella1/TinyNoisyEngines?embed=true" frameborder="0"></iframe>
+                    </div>
+                    <div class="iframe-item">
+                        <h3>Quiz Game</h3>
+                    <iframe class="styled-iframe" src="https://replit.com/@saldanhaviella1/ZigzagCrookedBlockchain?embed=true" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------contact------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i> saldanha.viella@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> 07448461211</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Staciesal22"><i class="fa-brands fa-github"></i></i></a>
+                            <a href="https://www.linkedin.com/in/stacie-saldanha-5731b2171"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Stacie. </p>
+            </div>
+        </div>
+        
+        
+        
+        <script>
+        
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+        
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        
+        </script>
+        
+        <script>
+        
+            var sidemeu = document.getElementById("sidemenu");
+        
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right = "-200px";
+            }
+        
+        </script>
+        <script>
+            const scriptURL = "https://script.google.com/macros/s/AKfycbw0Hzkb4P-bEwg6n7OAkcVFjfcDVx7JtSHYnMclfkEi46L8M13RJL0VYEuhgj4YB2Epog/exec"
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+        </body>
+        </html>
